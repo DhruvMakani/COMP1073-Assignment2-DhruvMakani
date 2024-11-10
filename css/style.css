@@ -60,9 +60,34 @@ input[type="checkbox"],input[type="radio"] {
     accent-color: #ff8c42;
 }
 
+.order-btn {
+    background-color: #ff8c42;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background-color: #ff6a00;
+}
+
 #smoothieOutput {
     margin-top: 20px;
     font-size: 1.2em;
     color: #333;
     animation: fadeIn 0.5s ease-in-out;
+}
+
+#smoothieOutput p {
+    font-weight: bold;
+    color: #444;
+}
+
+#smoothieOutput .total {
+    color: #ff6a00;
+    font-size: 1.2em;
+    font-weight: bold;
 }
