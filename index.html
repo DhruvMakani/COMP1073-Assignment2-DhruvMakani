@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Smoothify</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Order Your Smoothie</h1>
+        <form id="smoothieForm">
+            <!-- Form to select Ingredients -->
+            <div class="form">
+                <label>Choose Your Ingredients:</label>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="ingredient" value="Banana"> Banana - $1.50</label>
+                    <label><input type="checkbox" name="ingredient" value="Strawberry"> Strawberry - $2.00</label>
+                    <label><input type="checkbox" name="ingredient" value="Blueberry"> Blueberry - $2.00</label>
+                    <label><input type="checkbox" name="ingredient" value="Mango"> Mango - $3.00</label>
+                </div>
+            </div>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
