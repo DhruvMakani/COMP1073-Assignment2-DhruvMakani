@@ -39,3 +39,17 @@ class Smoothie {
         return `${description} <br> Total: $${price}`;
     }
 }
+
+// Create smoothie and display order with price
+function createSmoothie() {
+    const ingredients = Array.from(document.querySelectorAll('input[name="ingredient"]:checked')).map(input => input.value);
+    const base = document.querySelector('input[name="base"]:checked')?.value;
+    const size = document.querySelector('input[name="size"]:checked')?.value;
+
+    if (ingredients.length && base && size) {
+        const smoothie = new Smoothie(ingredients, base, size);
+        document.getElementById("smoothieOutput").innerHTML = `<p>${smoothie.getDescription()}</p>`;
+    } else {
+        alert("Please select all options.");
+    }
+}
